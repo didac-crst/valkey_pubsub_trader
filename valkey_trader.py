@@ -245,9 +245,3 @@ class TradeSubscriber:
             self.pubsub.close()
         except Exception as e:
             print(f"⚠️ Failed to close pubsub: {e}")
-
-
-# Example usage
-if __name__ == "__main__":
-    subscriber = TradeSubscriber()
-    subscriber.start()
